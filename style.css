@@ -50,7 +50,7 @@ div {
     grid-template-columns: repeat(2, 1fr);
 }
 
-.projects h1 {
+.projects h2 {
     display: block;
     grid-column: 1 / 3;
 }
