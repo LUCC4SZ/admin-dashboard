@@ -10,8 +10,7 @@ div {
 .container {
     display: grid;
     grid-template-columns: 1fr 3fr;
-    grid-template-rows: 1fr 4fr;
-    background-color: antiquewhite;
+    grid-template-rows: 1fr 2fr;
 }
 
 .sidebar {
@@ -25,8 +24,6 @@ div {
 .header {
     display: grid;
     grid-template-rows: 1fr 2fr;
-    gap: 8px;
-    background-color: aqua;
 }
 
 .nav {
@@ -39,4 +36,26 @@ div {
     display: grid;
     grid-template-columns: 3fr 1fr;
     background-color: azure;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: repeat(1fr, 3);
+    background-color: bisque;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.projects h1 {
+    display: block;
+    grid-column: 1 / 3;
+}
+
+.news {
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
 }
