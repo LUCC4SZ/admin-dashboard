@@ -21,6 +21,15 @@ div {
     gap: 4em;
 }
 
+.logo {
+    display: grid;
+    grid-template-columns: 25% 75%;
+}
+
+.sidebar img {
+    width: 50%;
+}
+
 .header {
     display: grid;
     grid-template-rows: 1fr 2fr;
