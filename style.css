@@ -24,10 +24,11 @@ div {
 .logo {
     display: grid;
     grid-template-columns: 25% 75%;
+    color: white;
 }
 
-.sidebar img {
-    width: 50%;
+svg {
+    fill: #fff;
 }
 
 .header {
