@@ -24,7 +24,6 @@ div {
     display: grid;
     grid-template-rows: repeat(3, 200px);
     background-color: #1992d4ff;
-    gap: 4em;
 }
 
 svg {
@@ -32,16 +31,32 @@ svg {
     height: 25px;
 }
 
+.logo,
+.navigation,
+.branding {
+    color: #fff;
+    font-weight: bold;
+}
+
 .logo {
+    /* height: 100px; */
     display: flex;
     flex-wrap: wrap;
-    color: white;
+    flex-direction: row;
     font-size: 32px;
     font-weight: bold;
+    border: none;
 }
 
 .logo svg {
     height: 50px;
+}
+
+.navigation,
+.branding {
+    font-size: 18px;
+    list-style: none;
+    margin-left: 16px;
 }
 
 .header {
@@ -53,6 +68,23 @@ svg {
 .nav {
     display: grid;
     grid-template-columns: 2fr 1fr;
+}
+
+.search svg {
+    fill: #000;
+}
+
+.search {
+    display: flex;
+    padding: 1rem;
+    border: none;
+}
+
+.search-bar {
+    width: 90%;
+    border-radius: 1em;
+    border-color: #e2e8f0ff;
+    background-color: #e2e8f0ff;
 }
 
 .info {
