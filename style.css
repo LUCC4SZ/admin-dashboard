@@ -11,16 +11,13 @@
     font-family: "Nunito";
 }
 
-div {
-    border: 1px solid black;
-}
-
 /* Body/Container styles */
 
 .container {
     display: grid;
     grid-template-columns: 20% 80%;
     grid-template-rows: 15% 85%;
+    background-color: #e2e8f0ff;
 }
 
 /* Sidebar section styles */
@@ -30,7 +27,6 @@ div {
     display: grid;
     grid-template-rows: repeat(3, 200px);
     background-color: #1992d4ff;
-    border: none;
 }
 
 svg {
@@ -51,7 +47,6 @@ svg {
     flex-direction: row;
     font-size: 32px;
     font-weight: bold;
-    border: none;
 }
 
 .logo svg {
@@ -72,14 +67,12 @@ svg {
     grid-template-rows: 1fr 2fr;
     background-color: #ffffffff;
     box-shadow: 0 2px 4px black;
-    margin-bottom: 8px;
-    border: none;
+    padding-bottom: 16px;
 }
 
 .nav {
     display: grid;
     grid-template-columns: 2fr 1fr;
-    border: none;
 }
 
 .nav svg {
@@ -91,7 +84,6 @@ svg {
     align-items: center;
     gap: 1rem;
     padding: 1rem;
-    border: none;
 }
 
 .search-bar {
@@ -107,20 +99,14 @@ svg {
     justify-content: space-evenly;
     align-items: center;
     padding: 1rem;
-    border: none;
 }
 
 .profile-picture {
-    border: none;
     width: 50px;
     height: 50px;
     background-image: url("img/deep-_PtMzmxN1ac-unsplash.svg");
     background-size: contain;
     background-repeat: no-repeat;
-}
-
-.profile-picture img {
-    width: 100%;
 }
 
 .menu p {
@@ -132,18 +118,15 @@ svg {
     display: grid;
     grid-template-columns: 3fr 1fr;
     padding: 8px;
-    border: none;
 }
 
 .user {
     display: flex;
     padding: 8px;
     gap: 12px;
-    border: none;
 }
 
 .text {
-    border: none;
     font-weight: bold;
 }
 
@@ -155,7 +138,6 @@ svg {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    border: none;
 }
 
 button {
@@ -171,12 +153,14 @@ button {
 
 /* Main section styles */
 
+
 .main {
     display: grid;
     grid-template-columns: 75% 25%;
-    background-color: #e2e8f0ff;
     padding: 8px;
 }
+
+    /* Projects section styles*/
 
 .projects {
     display: grid;
@@ -194,7 +178,6 @@ button {
     display: flex;
     background-color: #fff;
     border-radius: 1rem;
-    /* padding: 16px 12px; */
     gap: 8px;
     border-color: #e2e8f0ff;
     box-shadow: 1px 1px 2px 2px lightgray;
@@ -210,11 +193,10 @@ button {
 .content {
     display: flex;
     flex-direction: column;
-    border: none;
+    padding: 16px 12px;
 }
 
 .icons {
-    border: none;
     align-self: flex-end;
     display: flex;
 }
@@ -223,16 +205,78 @@ button {
     fill: #000;
 }
 
-/* .news {
+
+    /* News section styles*/
+
+.news {
     display: grid;
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-rows: 5% 40% 5% 40%;
 }
 
+        /* Announcements section styles*/
+
 .announcements {
-    grid-template-rows: repeat(1fr, 3);
+    display: grid;
+    grid-template-rows: repeat(3, 25%);
+    gap: 16px;
+    border-radius: 1rem;
+    background-color: #fff;
+    padding: 12px;
+    box-shadow: 1px 1px 2px 2px lightgray;
 }
+
+.announcements p {
+    font-size: 14px;
+}
+
+.announcements div {
+    display: flex;
+    flex-direction: column;
+}
+
+.announcements div:nth-child(2) {
+    border-top: 1px solid #e2e8f0ff;
+    border-bottom: 1px solid #e2e8f0ff;
+}
+
+        /* Trending section styles */
 
 .trending {
     display: grid;
-    grid-template-rows: repeat(1fr, 4);
-} */
+    grid-template-rows: repeat(4, 1fr);
+    background-color: #fff;
+    border-radius: 1rem;
+    box-shadow: 1px 1px 2px 2px lightgray;
+}
+
+.recommendation {
+    width: 50px;
+    height: 50px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.trend {
+    display: flex;
+    padding: 8px;
+}
+
+.at {
+    font-weight: 600;
+}
+
+.one {
+    background-image: url("img/round-icons-yRbTBLETRzE-unsplash.svg");
+}
+    
+.two {
+    background-image: url("img/round-icons-UOf1ff_Mj58-unsplash.svg");
+}
+    
+.three {
+    background-image: url("img/round-icons-T1jKc5y4WoY-unsplash.svg");
+}
+    
+.four {
+    background-image: url("img/round-icons-w6ynRqzSAJQ-unsplash.svg");
+}
