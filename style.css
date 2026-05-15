@@ -210,7 +210,7 @@ button {
 
 .news {
     display: grid;
-    grid-template-rows: 5% 40% 5% 40%;
+    grid-template-rows: 5% 45% 5% 45%;
 }
 
         /* Announcements section styles*/
